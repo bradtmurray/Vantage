@@ -220,13 +220,19 @@ button,a{-webkit-tap-highlight-color:transparent}
 .reviews-link,.caption{animation:fade .9s ease 1.25s both}
 #homePage::before{animation:drift 26s ease-in-out infinite alternate}
 @media(max-width:600px){.hero-sub{margin-bottom:28px}}
+
+/* Logo (top left) */
+.brand{padding:0;display:block;line-height:0;font-size:0;letter-spacing:0}
+.brand-logo{height:64px;width:auto;display:block}
+.dialog-wordmark .brand-logo{height:40px}
+@media(max-width:600px){.brand-logo{height:46px}.dialog-wordmark .brand-logo{height:34px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="site" id="homePage">
  <header class="header">
-  <a class="brand" href="#home" aria-label="VANTAGE home">VANTAGE</a>
+  <a class="brand" href="#home" aria-label="VANTAGE home"><img class="brand-logo" src="./logo.png" alt="VANTAGE"></a>
   <button class="menu-button" id="menuButton" aria-label="Open menu" aria-haspopup="dialog" aria-controls="menuPanel" aria-expanded="false"><span></span><span></span><span></span></button>
  </header>
  <main class="main" id="main">
@@ -243,7 +249,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 
 
 <section class="reviews-page" id="reviewsPage" aria-labelledby="reviewsTitle" hidden>
- <header class="header"><a class="brand" href="#home" aria-label="VANTAGE home">VANTAGE</a><a class="reviews-back" href="#home"><span aria-hidden="true">←</span> Back to home</a></header>
+ <header class="header"><a class="brand" href="#home" aria-label="VANTAGE home"><img class="brand-logo" src="./logo.png" alt="VANTAGE"></a><a class="reviews-back" href="#home"><span aria-hidden="true">←</span> Back to home</a></header>
  <main class="reviews-shell" id="reviewsMain">
   <div class="reviews-intro"><p class="kicker">VANTAGE / SELECTED FEEDBACK</p><h1 class="reviews-title" id="reviewsTitle" tabindex="-1">What people<br>are saying.</h1><p class="lead">A selection of 69 submissions supplied by VANTAGE about its analysis and service.</p>
    <p class="review-disclosure"><strong>Source & verification:</strong> Quotes, names, locations, and ratings were supplied by VANTAGE. Reviewer identities, purchases, and experiences have not been independently verified. These are selected submissions, not an aggregate rating or a complete review history.</p>
@@ -670,7 +676,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 
 
 <section class="checkout-page" id="thanksPage" aria-labelledby="thanksTitle" hidden>
- <header class="header"><a class="brand" href="#home" aria-label="VANTAGE home">VANTAGE</a><a class="reviews-back" href="#home"><span aria-hidden="true">←</span> Home</a></header>
+ <header class="header"><a class="brand" href="#home" aria-label="VANTAGE home"><img class="brand-logo" src="./logo.png" alt="VANTAGE"></a><a class="reviews-back" href="#home"><span aria-hidden="true">←</span> Home</a></header>
  <main class="checkout-shell" id="thanksMain">
   <div class="checkout-card">
    <p class="kicker">ORDER CONFIRMED</p>
@@ -685,7 +691,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 </section>
 
 <dialog class="menu-panel" id="menuPanel" aria-label="VANTAGE menu">
- <div class="dialog-header"><span class="dialog-wordmark">VANTAGE</span><button class="close" data-close="menu" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+ <div class="dialog-header"><span class="dialog-wordmark"><img class="brand-logo" src="./logo.png" alt="VANTAGE"></span><button class="close" data-close="menu" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
  <nav class="menu-links" aria-label="Main menu">
   <button class="menu-link" data-view="how">Checkout <span aria-hidden="true">→</span></button>
   <a class="menu-link" href="#reviews">Customer feedback <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
